@@ -20,7 +20,7 @@ CREATE TABLE gold (
  
 );
 
-SELECT * FROM gold;
+SELECT * FROM gold ORDER BY gold_date desc;
 
 CREATE TABLE bitcoin (
 	bit_date DATE PRIMARY KEY,
@@ -44,6 +44,8 @@ CREATE TABLE ether (
  
 );
 
-SELECT * FROM ether;
+SELECT * FROM bitcoin
+
+SELECT * FROM ether ORDER BY eth_date desc;
 
 DELETE FROM ether;
