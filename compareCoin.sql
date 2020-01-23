@@ -49,3 +49,5 @@ SELECT * FROM bitcoin
 SELECT * FROM ether ORDER BY eth_date desc;
 
 DELETE FROM ether;
+
+SELECT * FROM dowjones ORDER BY dj_date DESC;
