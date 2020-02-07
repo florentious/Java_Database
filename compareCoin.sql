@@ -107,8 +107,10 @@ CREATE TABLE pred_clf (
 
 );
 
-SELECT * FROM makedData;
+SELECT * FROM makedData ORDER BY md_date DESC;
 
 SELECT * FROM pred_clf;
 
 SELECT * FROM pred_clf ORDER BY pc_date DESC LIMIT 0,1;
+
+SELECT IFNULL(MAX(md_date),"2013-01-01") FROM makedData
